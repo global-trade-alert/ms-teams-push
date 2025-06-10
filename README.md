@@ -6,7 +6,14 @@ This repository contains a script that fetches intervention data from the Global
 
 Follow these steps to set up and run the MS Teams Push notification system:
 
-### 1. Set up a webhook in Microsoft Teams
+### 1. Clone the Repository
+
+```
+git clone git@github.com:global-trade-alert/ms-teams-push.git
+cd ms-teams-push
+```
+
+### 2. Set up a webhook in Microsoft Teams
 
 1. Open Microsoft Teams and navigate to the channel where you want to receive notifications
 2. Click on the three dots (...) next to the channel name and select "Manage channel"
@@ -18,7 +25,7 @@ Follow these steps to set up and run the MS Teams Push notification system:
 8. Copy the webhook URL that is generated - you'll need this for the .env file
 9. Click "Done" to finish the setup
 
-### 2. Create a GTA API Key
+### 3. Create a GTA API Key
 
 1. Go to the Global Trade Alert website: https://globaltradealert.org/account/api-keys
 2. Log in to your account (or create one if you don't have it)
@@ -26,7 +33,7 @@ Follow these steps to set up and run the MS Teams Push notification system:
 4. Generate a new API key
 5. Copy the API key - you'll need this for the .env file
 
-### 3. Configure Environment Variables
+### 4. Configure Environment Variables
 
 1. In the root directory of this repository, create a file named `.env`
 2. Add the following lines to the file:
@@ -37,7 +44,7 @@ Follow these steps to set up and run the MS Teams Push notification system:
 3. Replace `your_teams_webhook_url_here` with the webhook URL you copied from Teams
 4. Replace `your_gta_api_key_here` with the API key you generated from the GTA website
 
-### 4. Install Requirements
+### 5. Install Requirements
 
 1. Make sure you have Python 3.6 or higher installed
 2. Open a terminal/command prompt
@@ -47,7 +54,7 @@ Follow these steps to set up and run the MS Teams Push notification system:
    pip install -r requirements.txt
    ```
 
-### 5. Run the Script
+### 6. Run the Script
 
 1. In the terminal/command prompt, make sure you're in the repository directory
 2. Run the script with the following command:
